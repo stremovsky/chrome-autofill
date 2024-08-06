@@ -1,11 +1,16 @@
+
+// chrome://extensions/
+
 console.log("load autofill extention");
 const autofillFname = 'Yuli';
 const autofillLname = 'Stremovsky';
 const autofillEmail = 'stremovsky@gmail.com';
 const autofillTel = '+972-524486622';
 const autofillLinkedin = 'https://www.linkedin.com/in/stremovsky/';
+const autofillGithub = 'https://github.com/stremovsky/';
 
 const autofillDict = {
+  //'name': autofillFname,
   'fname': autofillFname,
   'firstname': autofillFname,
   'first-name': autofillFname,
@@ -21,7 +26,8 @@ const autofillDict = {
   'tel': autofillTel,
   'phone': autofillTel,
   'email': autofillEmail,
-  'linkedin': autofillLinkedin
+  'linkedin': autofillLinkedin,
+  'github': autofillGithub,
 };
 
 function autofillFixInputFields(doc) {
